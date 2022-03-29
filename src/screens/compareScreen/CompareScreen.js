@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 
 export default function CompareScreen({ navigation, route }) {
   return (
-    <View>
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Text>Hello world</Text>
     </View>
   );

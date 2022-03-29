@@ -3,11 +3,16 @@ import { StyleSheet, Text, View } from "react-native";
 import "react-native-gesture-handler";
 import RootNavigator from "./src/navigation/ParentNavigator";
 import { SafeAreaProvider } from "react-native-safe-area-context";
+import { Provider as ThemeProvider } from "./src/context/theme/ThemeContext";
+
+// CONTEXT
 
 export default function App() {
   return (
     <SafeAreaProvider>
-      <RootNavigator />
+      <ThemeProvider>
+        <RootNavigator />
+      </ThemeProvider>
     </SafeAreaProvider>
   );
 }
